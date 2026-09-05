@@ -175,6 +175,9 @@ Password: password
 
 Tests use an **SQLite in-memory database** — your real MySQL data is completely safe.
 
+> SQLite must be enabled in your PHP installation.
+> open `php.ini` and make sure `extension=pdo_sqlite` is uncommented.
+
 ```bash
 php artisan test --filter ShortUrlTest
 ```
